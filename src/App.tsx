@@ -2,59 +2,32 @@ import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import "./App.css";
 import SSPoster from "./SSPoster.jpg";
+import { ChangeType } from "./components/ChangeType";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { StartAttempt } from "./components/StartAttempt";
+import { TwoDice } from "./components/TwoDice";
+import { CycleHoliday } from "./components/CycleHoliday";
+import { Counter } from "./components/Counter";
 
 function App(): JSX.Element {
     return (
-        <Container>
-            <Row>
-                <Col>
-                    <div className="App">
-                        <header className="App-header">
-                            UD CISC275 with React Hooks and TypeScript
-                        </header>
-                        <p>Jason Hensley Hello World</p>
-                    </div>
-                    <div
-                        style={{
-                            width: 572,
-                            height: 200,
-                            backgroundColor: "gold"
-                        }}
-                    ></div>
-                </Col>
-                <Col>
-                    <div
-                        style={{
-                            backgroundColor: "blue"
-                        }}
-                    >
-                        <h1>I swear I added a header.</h1>
-                    </div>
-                    <img
-                        src={SSPoster}
-                        width={700}
-                        alt="My Summer Scholars Poster."
-                    />
-                    <ul>
-                        <li> My summer scholars poster is pictured above </li>
-                        <li> I did data processing for a neuroscience lab </li>
-                        <li> It was kinda stressful but super cool </li>
-                    </ul>
-                    <div>
-                        <Button onClick={() => console.log("Hello World!")}>
-                            Log Hello World
-                        </Button>
-                    </div>
-                    <div
-                        style={{
-                            width: 700,
-                            height: 200,
-                            backgroundColor: "gold"
-                        }}
-                    ></div>
-                </Col>
-            </Row>
-        </Container>
+        <div className="App">
+            <header className="App-header">
+                UD CISC275 with React Hooks and TypeScript
+            </header>
+            <hr></hr>
+            <Counter></Counter>
+            <hr />
+            <RevealAnswer></RevealAnswer>
+            <hr />
+            <StartAttempt></StartAttempt>
+            <hr />
+            <TwoDice></TwoDice>
+            <hr />
+            <ChangeType></ChangeType>
+            <hr />
+            <CycleHoliday></CycleHoliday>
+        </div>
     );
 }
 
