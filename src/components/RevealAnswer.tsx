@@ -10,6 +10,8 @@ export function RevealAnswer(): JSX.Element {
         <div>
             <Button onClick={flipVisibility}>Reveal Answer</Button>
             {visible && <div>42</div>}
+            <Button onClick={flipVisibility}>Reveal Answer</Button>
+            {visible && <div>42</div>}
         </div>
     );
 }
