@@ -48,7 +48,7 @@ function ClearTeam({ setTeam }: clearProps): JSX.Element {
 }
 
 export function ChooseTeam(): JSX.Element {
-    const [allOptions, setAllOptions] = useState<string[]>(PEOPLE);
+    const [allOptions] = useState<string[]>(PEOPLE);
     const [team, setTeam] = useState<string[]>([]);
 
     return (
